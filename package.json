@@ -16,8 +16,18 @@
 		"type": "opencollective",
 		"url": "https://opencollective.com/mediasoup"
 	},
-	"main": "lib/index.js",
+	"main": "lib/cjs/index.js",
 	"types": "lib/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./lib/index.js",
+			"require": "./lib/cjs/index.js"
+		},
+		"./lib/*": {
+			"import": "./lib/*.js",
+			"require": "./lib/cjs/*.js"
+		}
+	},
 	"files": [
 		"npm-scripts.mjs",
 		"lib"

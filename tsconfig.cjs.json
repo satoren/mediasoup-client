@@ -3,12 +3,12 @@
 	"compilerOptions": {
 		"lib": ["es2022", "dom"],
 		"target": "es2020",
-		"module": "ES2015",
+		"module": "commonjs",
 		"moduleResolution": "node",
 		"esModuleInterop": true,
 		"isolatedModules": true,
 		"strict": true,
-		"outDir": "lib",
+		"outDir": "lib/cjs",
 		"declaration": true,
 		"declarationMap": true
 	},
@@ -20,3 +20,4 @@
 		"synchronousWatchDirectory": true
 	}
 }
+

@@ -159,6 +159,7 @@ function buildTypescript({ force = false } = { force: false }) {
 
 	deleteLib();
 	executeCmd('tsc');
+	executeCmd('tsc -p ./tsconfig.cjs.json');
 }
 
 function lint() {
