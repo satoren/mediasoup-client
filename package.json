@@ -26,6 +26,18 @@
 		"./lib/*": {
 			"import": "./lib/*.js",
 			"require": "./lib/cjs/*.js"
+		},
+		"./lib/handlers/*": {
+			"import": "./lib/handlers/*.js",
+			"require": "./lib/cjs/handlers/*.js"
+		},
+		"./lib/handlers/ortc/*": {
+			"import": "./lib/handlers/ortc/*.js",
+			"require": "./lib/cjs/handlers/ortc/*.js"
+		},
+		"./lib/handlers/sdp/*": {
+			"import": "./lib/handlers/sdp/*.js",
+			"require": "./lib/cjs/handlers/sdp/*.js"
 		}
 	},
 	"files": [
