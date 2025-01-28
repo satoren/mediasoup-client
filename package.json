@@ -16,28 +16,28 @@
 		"type": "opencollective",
 		"url": "https://opencollective.com/mediasoup"
 	},
-	"main": "lib/cjs/index.js",
+	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
 	"exports": {
 		".": {
-			"import": "./lib/index.js",
-			"require": "./lib/cjs/index.js"
+			"import": "./lib/esm/index.js",
+			"require": "./lib/index.js"
 		},
 		"./lib/*": {
-			"import": "./lib/*.js",
-			"require": "./lib/cjs/*.js"
+			"import": "./lib/esm/*.js",
+			"require": "./lib/*.js"
 		},
 		"./lib/handlers/*": {
-			"import": "./lib/handlers/*.js",
-			"require": "./lib/cjs/handlers/*.js"
+			"import": "./lib/esm/handlers/*.js",
+			"require": "./lib/handlers/*.js"
 		},
 		"./lib/handlers/ortc/*": {
-			"import": "./lib/handlers/ortc/*.js",
-			"require": "./lib/cjs/handlers/ortc/*.js"
+			"import": "./lib/esm/handlers/ortc/*.js",
+			"require": "./lib/handlers/ortc/*.js"
 		},
 		"./lib/handlers/sdp/*": {
-			"import": "./lib/handlers/sdp/*.js",
-			"require": "./lib/cjs/handlers/sdp/*.js"
+			"import": "./lib/esm/handlers/sdp/*.js",
+			"require": "./lib/handlers/sdp/*.js"
 		}
 	},
 	"files": [

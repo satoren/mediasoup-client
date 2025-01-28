@@ -3,7 +3,7 @@
 	"compilerOptions": {
 		"lib": ["es2022", "dom"],
 		"target": "es2020",
-		"module": "ES2015",
+		"module": "commonjs",
 		"moduleResolution": "node",
 		"esModuleInterop": true,
 		"isolatedModules": true,
